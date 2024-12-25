@@ -594,6 +594,16 @@ textarea {
   .contact-container p {
     font-size: 1rem;
   }
+
+  .contact-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+ .contract_number_adress{
+  display: none;
+ }
 }
 
 
