@@ -25,37 +25,102 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
+/* ==========Header============== */
 header {
-  background: var(--primary-color);
+  width: 100%;
+  height: 40px;
+  background-color: var(--primary-color);
   color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+header nav{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.nav-portfolio-links {
+  display: flex;
   list-style: none;
-  gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
-nav a {
-  color: #fff;
+.nav-portfolio-links li {
+  margin: 0 15px;
+}
+
+.nav-portfolio-links a {
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #fff;
+  font-size: 16px;
 }
 
-nav a:hover {
-  color: var(--accent-color);
+.nav-portfolio-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* Section */
+.Profile_picture{
+  width: 40px;
+  margin-top: -5px;
+  padding: 0px;
+  border-radius: 10%;
+  
+ 
+}
+.nav-portfolio-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-portfolio-hamburger span {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-portfolio-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .nav-portfolio-links.show {
+    display: flex;
+    
+  }
+
+
+  .nav-portfolio-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-portfolio-hamburger {
+    display: flex;
+   
+  }
+}
+
+
+
+/* ==============Section ================== */
 section {
   padding: 4rem 2rem;
   text-align: center;
@@ -693,6 +758,12 @@ textarea {
   font-size: 12px;
   color: #888;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nadib-profile-card{
+    max-width: 320;
+  }
 }
 
 
