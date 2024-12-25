@@ -9,6 +9,7 @@
     />
     <title>Portfolio - Nadib Rana</title>
     <link rel="stylesheet" href="styles.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,15 +18,28 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="nav-portfolio-menu-container">
+          <a href="#" class="nav-portfolio-logo">
+            <img src="5ff.jpg" alt="Profile picture" class="Profile_picture" >
+          </a>
+        
+        </div>
+        <ul class="nav-portfolio-links" id="nav-portfolio-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-portfolio-hamburger" id="nav-portfolio-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+      <script src="script.js"></script>
     </header>
+    
 
     <section id="home">
       <h1 style="font-size: 30px; margin-top: -47px;">Welcome to My Portfolio</h1>
@@ -288,7 +302,7 @@
           </table>
       
           <hr>
-          <div style="display: flex; justify-content: space-between;">
+          <div  style="display: flex; justify-content: space-between;">
               <table>
                   <tr>
                       <td>
