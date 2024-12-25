@@ -596,6 +596,96 @@ textarea {
   }
 }
 
+
+/* General Styles */
+.nadib-profile-card {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #c1bfbf;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.nadib-profile-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nadib-profile-card img {
+  border-radius: 50%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.nadib-profile-card .profile-photo {
+  width: 80px;
+  height: 80px;
+}
+
+.nadib-profile-card .name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0078d7;
+}
+
+.nadib-profile-card .subtext {
+  margin: 5px 0;
+  color: #555;
+}
+
+.nadib-profile-card hr {
+  border: 0;
+  border-top: 1px solid #c1c0c0;
+  margin: 10px 0;
+}
+
+.nadib-profile-card a {
+  text-decoration: none;
+  color: #555;
+}
+
+.nadib-profile-card a:hover {
+  color: #0078d7;
+}
+
+.nadib-profile-card .contact img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.nadib-profile-card .social-icons {
+  padding: 10px;
+  align-items: center;
+  border-left: 2px solid #000000;
+}
+
+
+.nadib-profile-card .social-icons a {
+  margin: 5px 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+  border-radius: 50%;
+}
+
+.nadib-profile-card .social-icons img {
+  border-radius: 50%;
+}
+
+.nadib-profile-card .quote {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+
 /* ===================== Footer ==================== */
 
 footer {
