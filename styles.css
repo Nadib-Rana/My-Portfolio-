@@ -124,6 +124,16 @@ header nav{
 
 
 /* ==============Section ================== */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.wlc {
+  font-weight: 700;
+  font-family: 'Monoton';
+  font-size: 50px;
+}
+
+
+
 section {
   padding: 4rem 2rem;
   text-align: center;
@@ -379,9 +389,13 @@ section {
 }
 
 .project-image {
+  position: relative;
   width: 100px;
-  border-radius: 50%;
+  height: 100px;
+  border-radius: 25px;
+  border: 5px double green;
   object-fit: cover;
+  top:10px;
   transition: transform 0.5s ease;
 }
 
