@@ -28,3 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start the sequence
   showImagesSequentially();
 });
+/////////////////////////////////////
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.skill-level').forEach(skill => {
+      const level = skill.getAttribute('data-level');
+      skill.style.width = `${level}%`;
+    });
+  });

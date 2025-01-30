@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-
 <body>
   <header>
     <nav>
@@ -25,7 +24,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#expertise">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-portfolio-hamburger" id="nav-portfolio-hamburger">
@@ -234,45 +233,169 @@
     </div>
   </section>
 
-<!-- ==============Skill Section ======================== -->
-  <section id="skills">
-    <h2 class="section-title">My Expertise</h2>
-    <div class="skills-container">
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s1.jpeg" alt="HTML5"></div>
-        <h3>HTML5</h3>
-        <p>Building responsive and accessible websites with semantic HTML.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s2.png" alt="CSS3"></div>
-        <h3>CSS3</h3>
-        <p>Designing pixel-perfect, responsive websites with advanced CSS techniques.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s3.png" alt="JavaScript"></div>
-        <h3>JavaScript</h3>
-        <p>Implementing dynamic web pages and interactive applications with JavaScript.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s4.png" alt="React"></div>
-        <h3>React</h3>
-        <p>Developing modern, scalable web apps with React and the latest React features.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s5.jpeg" alt="Node.js"></div>
-        <h3>Node.js</h3>
-        <p>Building robust backend services with Node.js and Express.js for scalable applications.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon"><img src="Skill_img/s6.png" alt="MongoDB"></div>
-        <h3>MongoDB</h3>
-        <p>Implementing NoSQL database solutions for high-performance applications with MongoDB.</p>
+
+
+   <!--========== Expertise Section ===========-->
+   <section id="expertise" class="expertise-section">
+    <div class="container">
+      <h2 class="section-title">My Expertise</h2>
+      <div class="expertise-grid">
+        <!-- Core Competencies -->
+        <div class="expertise-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3>Core Competencies</h3>
+          </div>
+          <div class="card-content">
+            <div class="skill-item">
+              <span>Web Development</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Data Structures & Algorithms</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Object-Oriented Programming</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>Database Systems</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Technical Stack -->
+        <div class="expertise-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Technical Stack</h3>
+          </div>
+          <div class="card-content">
+            <div class="tech-tags">
+              <span>C++</span>
+              <span>Python</span>
+              <span>Java</span>
+              <span>SQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Linux</span>
+              <span>Git</span>
+              <span>LaTeX</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Academic Focus -->
+        <div class="expertise-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Academic Focus</h3>
+          </div>
+          <div class="card-content">
+            <ul class="academic-list">
+              <li>
+                <i class="fas fa-brain"></i>
+                Machine Learning Fundamentals
+              </li>
+              <li>
+                <i class="fas fa-shield-alt"></i>
+                Cybersecurity Basics
+              </li>
+              <li>
+                <i class="fas fa-network-wired"></i>
+                Computer Networks
+              </li>
+              <li>
+                <i class="fas fa-cogs"></i>
+                OS & Distributed Systems
+              </li>
+              <li>
+                <i class="fas fa-database"></i>
+                Information Systems Development
+              </li>
+              <li>
+                <i class="fas fa-project-diagram"></i>
+                Integrated Design Project
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- UI/UX Design -->
+        <div class="expertise-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="card-content">
+            <ul class="academic-list">
+              <li>
+                <i class="fab fa-figma"></i>
+                Figma
+              </li>
+              <li>
+                <i class="fas fa-paint-brush"></i>
+                Canva
+              </li>
+              <li>
+                <i class="fab fa-wordpress"></i>
+                WordPress
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- SQA (Software Quality Assurance) -->
+        <div class="expertise-card">
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="fas fa-check-double"></i>
+            </div>
+            <h3>SQA</h3>
+          </div>
+          <div class="card-content">
+            <ul class="academic-list">
+              <li>
+                <i class="fas fa-tools"></i>
+                Selenium
+              </li>
+              <li>
+                <i class="fas fa-tasks"></i>
+                JIRA
+              </li>
+              <li>
+                <i class="fas fa-code-branch"></i>
+                Agile Testing
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ==============contract section================== -->
-
   <section id="contact">
     <h2>Contact Me</h2>
     <p>Feel free to reach out for any inquiries,collaborations, or just to say hi!</p>
