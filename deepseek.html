@@ -3,57 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Services</title>
+    <title>Professional Services Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        /* Custom CSS Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        /* Services Section Styles */
         .services-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .section-container {
             max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            margin: 0 auto;
         }
-        .service {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
         }
-        .service h3 {
-            margin-top: 0;
-            color: #333;
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 15px;
         }
-        .service p {
-            color: #777;
+
+        .section-header p {
+            color: #636e72;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: #4b7bec;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            transition: background 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background: #3867d6;
+        }
+
+        .service-card h3 {
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #636e72;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            text-decoration: none;
+            color: #4b7bec;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #3867d6;
+        }
+
+        .service-link i {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 60px 15px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="services-section">
-        <div class="service">
-            <h3>UI/UX Design</h3>
-            <p>Crafting intuitive and visually appealing user interfaces and experiences that resonate with your audience.</p>
+    <section class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Our Professional Services</h2>
+                <p>Delivering exceptional solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website development with modern technologies and responsive design.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure cloud infrastructure setup, migration, and management services.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Comprehensive security solutions and vulnerability assessment services.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven marketing strategies to boost your online presence.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Expert technology consulting and strategic planning services.</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="service">
-            <h3>Web Development</h3>
-            <p>Building robust and responsive websites tailored to your specific needs, using the latest technologies and best practices.</p>
-        </div>
-        <div class="service">
-            <h3>Email Signature Design</h3>
-            <p>Creating professional and eye-catching email signatures that enhance your brand identity and leave a lasting impression.</p>
-        </div>
-        <div class="service">
-            <h3>Email Template Design</h3>
-            <p>Designing engaging and customizable email templates that effectively communicate your message and captivate your audience.</p>
-        </div>
-        <div class="service">
-            <h3>Software Quality Assurance (SQA)</h3>
-            <p>Ensuring the highest quality of software through meticulous testing and quality assurance processes, guaranteeing your product performs flawlessly.</p>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
