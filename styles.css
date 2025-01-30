@@ -1,7 +1,7 @@
 /* Global Variables */
 :root {
-  --primary-color: #004085; /* Deep navy blue */
-  --secondary-color: #007bff; /* Bright blue */
+  --primary-color: #192a3d; /* Deep navy blue */
+  --secondary-color: #29425c; /* Bright blue */
   --accent-color: #ffc107; /* Golden yellow */
   --text-color: #333; /* Dark text */
   --bg-color: #f9f9f9; /* Light gray background */
@@ -424,7 +424,7 @@ section {
 }
 
 .view-project-btn {
-  background-color: #42a5f5;
+  background-color: #192a3d;
   color: #fff;
   padding: 0.8rem 2rem;
   text-decoration: none;
@@ -473,7 +473,7 @@ section {
 /* -======== Expertise Section==========- */
 
         :root {
-          --tech-blue: #2563eb;
+          --tech-blue: #192a3d;
           --code-purple: #7c3aed;
           --accent-teal: #14b8a6;
           --dark-bg: #1e293b;
@@ -718,7 +718,7 @@ textarea {
 }
 
 .submit-btn {
-  background-color: #004085;
+  background-color: #192a3d;
   color: #fff;
   padding: 1rem 2rem;
   font-size: 1.1rem;
