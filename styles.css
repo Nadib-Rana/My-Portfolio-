@@ -446,6 +446,14 @@ section {
   animation-delay: 0.4s;
 }
 
+.project-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
 .view-project-btn {
   background-color: #192a3d;
   color: #fff;
@@ -453,15 +461,38 @@ section {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   opacity: 0;
   animation: fadeIn 0.8s forwards;
   animation-delay: 0.6s;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left:5px ;
 }
 
 .view-project-btn:hover {
   background-color: #0077c2;
+  transform: translateY(-2px);
 }
+
+@media (max-width: 600px) {
+  .project-view {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .view-project-btn {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .project-card:hover .project-image {
   transform: scale(1.05);
@@ -1020,7 +1051,6 @@ footer {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
 /* Images will appear when the class "visible" is added */
 .social-img.visible {
   opacity: 1;
