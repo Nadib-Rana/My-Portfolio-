@@ -455,8 +455,8 @@ section {
 }
 
 .view-project-btn {
-  background-color: #192a3d;
-  color: #fff;
+  background-color: transparent;
+  color: #242222;
   padding: 0.8rem 2rem;
   text-decoration: none;
   border-radius: 5px;
@@ -469,6 +469,8 @@ section {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-left:5px ;
+  border: 2px solid #0077c2;
+  
 }
 
 .view-project-btn:hover {
